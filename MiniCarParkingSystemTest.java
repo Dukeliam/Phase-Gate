@@ -27,10 +27,20 @@ public class MiniCarParkingSystemTest{
       public void testThatTheToChooseTheNextSlot(){
             MiniCarParkingSystem miniCarParkingSystem = new MiniCarParkingSystem();
             
-            int expected = miniCarParkingSystem.nextSlot(5);
+            int expected = miniCarParkingSystem.nextSlot(1);
             
-            int actual = 6;
+            int actual = 1;
             
             Assertions.assertEquals(actual, expected);
       }
+        @Test
+        public void testExitTheSlot(){
+            MiniCarParkingSystem miniCarParkingSystem = new MiniCarParkingSystem();
+            
+            boolean expected = miniCarParkingSystem.existSlot(4);
+            
+            boolean actual = true;
+            
+            Assertions.assertEquals(actual, expected);
+        }
 }
