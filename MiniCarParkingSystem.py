@@ -6,30 +6,30 @@ def emptySlot(){
             slots.append(index)
       return slots
 
-}
-def isSlotEmpty(int slot){
-      int index = slot - 1;
-      if(slot < 1 || slot > 20){
-            return false;
-      }
-      if(slots[index] == 0){
-            return true;
-      }
+
+def isSlotEmpty(slot){
+      index = slot - 1
+      if slot < 1 || slot > 20:
+            return false
       
-            return false;
-}
-public static boolean isSlotOccupied(int slot){
-      int index = slot -1;
-      if(slot < 1 || slot > 20){
-            return false;
-      }
-      if(slots[index] == 0){
-            slots[index] = 1;
-            return true;
-      }
+      if slots[index] == 0:
+            return true
       
-            return false;
-}
+      
+      return false;
+
+def isSlotOccupied(slot){
+      index = slot -1;
+      if slot < 1 || slot > 20:
+            return false
+      
+      if slots[index] == 0:
+            slots[index] = 1
+            return true
+      
+      
+            return false
+
 public static int nextSlot(int index){
       for(index = 0; index < 20; index++){
             if(slots[index] == 0){
@@ -56,8 +56,6 @@ public static int countAvaliableSpaces(){
       for(int index = 0; index < 20; index++){
             if(slots[index] == 0){
                   avaliable++;
-            }
-      }
+            
+      
             return avaliable;
-}
-}
