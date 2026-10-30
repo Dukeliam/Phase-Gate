@@ -29,14 +29,24 @@ public class StudentGrade{
                          System.out.println("Saved Successfully");
                   }
             }
-            
-//           int[][] scores = new int[student][subject];
+            //           int[][] scores = new int[student][subject];
            
             
             for(int index = 0; index < scores.length; index++){
                   for(int count = 0; count < scores[index].length; count++){
                   
                   }
+
             }
       }
+      
+      public static int total(int[][] numbers){
+                 int total = 0; 
+            for(int index = 0; index < numbers.length; index++){
+                  
+                  for(int count = 0; count < numbers[index].length; count++){
+                  total += numbers[index][count];
+                  }
+            }
+                  return t
 }
