@@ -12,22 +12,27 @@ public class StudentGrade{
             
             System.out.println("Svaing >>>>>>>>>>>>>>>>>>>");
             System.out.println("Saved Successfully");
+            System.out.println();
           
            int[][] scores = new int[student][subject];
             
             for(int index = 0; index < student; index++){
                   for(int count = 0; count < subject; count++){
-                        System.out.print("Entering score for Student " + (index + 1) + ": " );
+                        //System.out.print("Entering score for Student " + (index + 1) + ": " );
+                        System.out.print("Entering score for Student " + (index + 1) + " Subject " + (count + 1) + ": " );
                         int  score = input.nextInt();
                          
                          while(score < 0 || score > 100){
+                              
                               System.out.print("Invalid score Try again: ");
                               score = input.nextInt();
                          }
                          scores[index][count] = score;
                          System.out.println("Svaing >>>>>>>>>>>>>>>>>>>");
                          System.out.println("Saved Successfully");
+                          System.out.println();
                   }
+                        
             }
             //           int[][] scores = new int[student][subject];
            
@@ -48,5 +53,6 @@ public class StudentGrade{
                   total += numbers[index][count];
                   }
             }
-                  return t
+                  return total;
+      }
 }
