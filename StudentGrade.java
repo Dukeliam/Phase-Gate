@@ -44,14 +44,29 @@ public class StudentGrade{
             }
       }
       
-      public static int total(int[][] numbers){
-                 int total = 0; 
+     public static int[] total(int[][] numbers){
+                 int[] result = new int[numbers.length];
             for(int index = 0; index < numbers.length; index++){
-                  
+                  int total = 0;
                   for(int count = 0; count < numbers[index].length; count++){
                   total += numbers[index][count];
+                  
                   }
+                  result[index] = total;
             }
-                  return total;
+            return result;
+      }
+      public static double[] average(int[][] numbers){
+            double[] result = new double[numbers.length];
+            
+            for(int index = 0; index < numbers.length; index++){
+                  int total = 0;
+                  for(int count = 0; count < numbers[index].length; count++){
+                  total += numbers[index][count];
+                  
+                  }
+                  result[index] = (double) total / numbers.length;
+            }
+                  return result;
       }
 }
