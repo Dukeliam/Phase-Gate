@@ -18,7 +18,6 @@ public class StudentGrade{
             
             for(int index = 0; index < student; index++){
                   for(int count = 0; count < subject; count++){
-                        //System.out.print("Entering score for Student " + (index + 1) + ": " );
                         System.out.print("Entering score for Student " + (index + 1) + " Subject " + (count + 1) + ": " );
                         int  score = input.nextInt();
                          
