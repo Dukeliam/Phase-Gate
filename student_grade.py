@@ -43,8 +43,6 @@ def position(numbers):
     return result
 
 
-# Main program
-
 print("How many students do you have?")
 student = int(input())
 
